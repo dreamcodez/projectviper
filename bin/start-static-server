@@ -1,0 +1,12 @@
+#!/usr/local/bin/node
+
+var connect = require('connect');
+
+var app = connect.createServer();
+
+app
+  .use(connect.logger('dev'))
+  .use(connect.static('client'));
+
+app.listen(8080);
+

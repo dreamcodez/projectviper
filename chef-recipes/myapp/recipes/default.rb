@@ -12,6 +12,9 @@ end
 include_recipe 'pound'
 include_recipe 'nodejs'
 
+# install mongodb
+package 'mongodb-server'
+
 # XXX this should perhaps go somewhere else, but for now, i like having this always
 package 'tmux'
 package 'vim'
